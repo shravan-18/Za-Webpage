@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="h-100" lang="en">
 
@@ -7,16 +6,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.1">
   <meta name="HandheldFriendly" content="true">
-  <title>Home</title>
+  <title>Zestral</title>
   <link rel="stylesheet" href="css/theme.min.css">
 
    <style>
+
+  .image-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .role-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.2rem; /* Smaller font size for sleekness */
+    font-weight: 500; /* Lighter font weight for elegance */
+    letter-spacing: 1px; /* Slightly spaced letters for modern feel */
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    padding: 8px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+
+  .image-container:hover .role-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px); /* Slight lift effect on hover */
+  }
 
 /* inter-300 - latin */
 @font-face {
@@ -68,8 +94,8 @@
 
     <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
       <div class="container">
-        <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="#">
-      <img src="../img/webp/logo.svg" width="200" height="160" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16" style="margin-left: -160px;">
+        <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="https://www.zestral.in">
+      <img src="../img/webp/logo-75.svg" width="80" height="80" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16" style="margin-left: -160px;">
       <!-- <span class="ms-md-1 mt-1 fw-bolder me-md-5">Zestral</span> -->
     </a>
     
@@ -95,7 +121,7 @@
     </div>
     <div class="col-12 col-xl-8">
       <b><p class="text-secondary">Visualize. Innovate. Automate.</p></b>
-      <p class="lead text-secondary">We push the boundaries of AI automation with innovative computer vision solutions, transforming multidisciplinary and interdisciplinary workflows and redefining possibilities across industries.</p>
+      <p class="lead text-secondary">We push the boundaries of AI and computer vision automation with innovative computational solutions, transforming multidisciplinary and interdisciplinary workflows and making AI more accessible.</p>
     </div>
     <div class="col-12 text-center">
       <a href="#" class="btn btn-xl btn-light">Join us
@@ -130,21 +156,30 @@
     <div class="row d-flex align-items-center">
       <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
         <span class="h5 text-secondary fw-lighter">What we do</span>
-        <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
+        <h2 class="display-4">We create accessible AI and computer vision automation solutions, advancing industries by making AI easier and efficient to access.</h2>
       </div>
       <div class="col-12 col-lg-5" data-aos="fade-left">
-        <h3 class="pt-5">Product Design & Strategy</h3>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+        <h3 class="pt-5">AI and Computer Vision Automation</h3>
+        <p class="text-secondary">We create smart automation solutions that integrate AI and computer vision, transforming complex processes into seamless workflows across industries.<br>
           <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
 </svg>
 </p>
-        <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+        <h3 class="border-top border-secondary pt-5 mt-5">UI/UX and Human-Computer Interaction (HCI)</h3>
+        <p class="text-secondary">We design user-centric interfaces that prioritize accessibility and usability, making cutting-edge technology intuitive and engaging for everyone.<br>
           <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg>
+</p>
+
+
+<h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
+<p class="text-secondary">We build scalable, high-performance software that brings our AI solutions to life, ensuring reliability and efficiency at every level.<br>
+  <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
 </svg>
 </p>
       </div>
@@ -159,49 +194,49 @@
     <div class="col-12 col-md-6">
       <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
         <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract3.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+          <img src="img/webp/endo1.png" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
           <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+            <h2 class="fw-lighter" style="color: white;">Endobuddy</h2>
+            <p class="pb-4 text-secondary">Our cutting-edge AI-powered endoscopy software revolutionizes Upper-GI procedures with real-time visual guidance and automatic landmark detection, empowering clinicians to achieve greater precision and efficiency.</p>
+            <a href="Projects/Endobuddy.html" class="link-fancy link-fancy-light">Read more</a>
           </div>
         </div>
       </div>
 
       <div class="card bg-transparent" data-aos="zoom-in-up">
         <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract2.webp" width="582" height="442" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+          <img src="img/webp/AICOP-record.jpg" width="582" height="442" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
           <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+            <h2 class="fw-lighter" style="color: white;">AI-COP</h2>
+            <p class="pb-4 text-secondary">AI-COP is an AI-powered tool that transcribes and generates detailed surgery reports for off-pump coronary bypass procedures.</p>
+            <a href="Projects/AI_COP.html" class="link-fancy link-fancy-light">Read more</a>
           </div>
         </div>
       </div>
     </div>
     <div class="col-12 col-md-6">
       <div class="p-5 pt-0 mt-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">What we don´t know</span>
-        <h2 class="display-4">There is a lot we don´t know. Here is a small sneak peek</h2>
+        <span class="h5 text-secondary fw-lighter">Our Work</span>
+        <h2 class="display-4">Some of our recent projects and research.</h2>
       </div>
       <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
         <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract17.webp" width="582" height="390" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+          <img src="img/webp/CerviLogo-Index.png" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
           <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+            <h2 class="fw-lighter" style="color: white;">CerviLens</h2>
+            <p class="pb-4 text-secondary">Our state-of-the-art AI-powered cervical cancer screening software enhances diagnostic accuracy by categorizing images in real-time, streamlining procedures, and generating comprehensive automated reports, all aimed at improving clinical efficiency and patient care.</p>
+            <a href="Projects/CerviLens.html" class="link-fancy link-fancy-light">Read more</a>
           </div>
         </div>
       </div>
 
       <div class="card bg-transparent" data-aos="zoom-in-up">
         <div class="bg-dark shadow rounded-5 p-0">
-          <img src="img/webp/abstract4.webp" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+          <img src="img/webp/MediScan-Form1.png" width="582" height="327" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
           <div class="p-5">
-            <h2 class="fw-lighter">Ipsum dolor est</h2>
-            <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-            <a href="#" class="link-fancy link-fancy-light">Read more</a>
+            <h2 class="fw-lighter" style="color: white;">MediScan</h2>
+            <p class="pb-4 text-secondary">Our AI-enabled platform simplifies medical procedures, automating report generation to improve workflow efficiency.</p>
+            <a href="Projects/MediScan.html" class="link-fancy link-fancy-light">Read more</a>
           </div>
         </div>
       </div>
@@ -211,23 +246,40 @@
 </div>
 
 </div>
+
+
+
 <div class="bg-dark position-relative">
   <div class="container px-vw-5 py-vh-5">
     <div class="row d-flex align-items-center">
-
       <div class="col-12 col-lg-7">
-        <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/person9.webp" width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/person11.webp" width="512" height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
+        <!-- Shravan's Image with Hover Effect -->
+        <div class="image-container mb-4">
+          <img class="img-fluid rounded-5 mb-n5 shadow" src="img/webp/shravan.png" width="512" height="512" alt="Shravan" loading="lazy" data-aos="zoom-in-right">
+          <div class="role-text">Shravan Venkatraman, Founder & CEO</div>
+        </div>
+        
+        <!-- Pavan's Image with Hover Effect -->
+        <div class="image-container mb-4">
+          <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/webp/pavan.jpg" width="512" height="512" alt="Pavan" loading="lazy" data-aos="zoom-in-up">
+          <div class="role-text ms-5">Pavan Kumar S, Founder & CTO</div>
+        </div>
+        
+        <!-- Jayasankar's Image with Hover Effect -->
+        <div class="image-container mb-4">
+          <img class="img-fluid rounded-5 ms-4 mb-n5 shadow" src="img/webp/jayasankar.jpg" width="512" height="512" alt="Jayasankar" loading="lazy" data-aos="zoom-in-left">
+          <div class="role-text">Jayasankar KS, Founder & CDO</div>
+        </div>
       </div>
       <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
-        <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
-        <h2 class="display-4">We constantly adding new images to our website. Does it make sense? No!</h2>
+        <span class="h5 text-secondary fw-lighter">Brains. Passion. Purpose.</span>
+        <h2 class="display-4">We’re three aspiring techpreneurs who fuse cutting-edge tech with human-centered design to make AI more accessible.</h2>
       </div>
     </div>
   </div>
 </div>
 
-<div class="bg-black">
+<!-- <div class="bg-black">
 <div class="container px-vw-5 py-vh-5">
   <div class="row d-flex align-items-center">
     <div class="col-12 col-lg-5 text-center text-lg-end" data-aos="zoom-in-right">
@@ -247,8 +299,10 @@
   </div>
 </div>
 
-</div>
-<div class="container-fluid px-vw-5 position-relative" data-aos="fade">
+</div> -->
+
+
+<!-- <div class="container-fluid px-vw-5 position-relative" data-aos="fade">
 <div class="position-absolute w-100 h-50 bg-black top-0 start-0"></div>
 <div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-image: url(img/webp/abstract12.webp)">
   <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
@@ -285,8 +339,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 </div>
 
 </div>
-</div>
-<div class="bg-dark py-vh-5">
+</div> -->
+
+<!-- <div class="bg-black py-vh-5">
 <div class="container px-vw-5">
   <div class="row d-flex gx-5 align-items-center">
     <div class="col-12 col-lg-6">
@@ -411,7 +466,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
   </div>
 </div>
 
-</div>
+</div> -->
 
     </main>
 
